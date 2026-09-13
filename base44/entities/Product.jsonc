@@ -1,0 +1,125 @@
+{
+  "name": "Product",
+  "type": "object",
+  "properties": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "string"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "PC Games",
+        "PlayStation Games",
+        "Xbox Games",
+        "Nintendo Games",
+        "Steam Wallet",
+        "Gift Cards",
+        "Gaming Accounts",
+        "Gaming Consoles",
+        "Controllers",
+        "Gaming Headsets",
+        "Mechanical Keyboards",
+        "Gaming Mouse",
+        "Gaming Accessories",
+        "Digital Products",
+        "DNS Services"
+      ]
+    },
+    "platform": {
+      "type": "string",
+      "enum": [
+        "PC",
+        "PlayStation",
+        "Xbox",
+        "Nintendo",
+        "Steam",
+        "Multi"
+      ]
+    },
+    "brand": {
+      "type": "string"
+    },
+    "genre": {
+      "type": "string"
+    },
+    "price": {
+      "type": "number"
+    },
+    "original_price": {
+      "type": "number"
+    },
+    "discount_percent": {
+      "type": "number"
+    },
+    "rating": {
+      "type": "number"
+    },
+    "review_count": {
+      "type": "number"
+    },
+    "stock": {
+      "type": "number"
+    },
+    "availability": {
+      "type": "string",
+      "enum": [
+        "In Stock",
+        "Limited",
+        "Pre-Order",
+        "Out of Stock"
+      ]
+    },
+    "cover_image": {
+      "type": "string"
+    },
+    "gallery": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "description": {
+      "type": "string"
+    },
+    "features": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "min_requirements": {
+      "type": "string"
+    },
+    "rec_requirements": {
+      "type": "string"
+    },
+    "publisher": {
+      "type": "string"
+    },
+    "developer": {
+      "type": "string"
+    },
+    "release_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "is_featured": {
+      "type": "boolean"
+    },
+    "is_trending": {
+      "type": "boolean"
+    },
+    "is_flash_sale": {
+      "type": "boolean"
+    }
+  },
+  "required": [
+    "title",
+    "category",
+    "platform",
+    "price"
+  ]
+}
