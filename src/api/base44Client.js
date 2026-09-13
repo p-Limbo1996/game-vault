@@ -13,5 +13,5 @@ export const base44 = createClient({
   functionsVersion,
   serverUrl: "",
   requiresAuth: false,
-  appBaseUrl,
+  appBaseUrl: "https://flawless-vault-core-play.base44.app",
 });
